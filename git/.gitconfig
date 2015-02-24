@@ -1,0 +1,9 @@
+[user]
+    name = Alan Barr
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+[difftool]
+    prompt = false
+[push]
+    default = tracking

@@ -1,0 +1,14 @@
+# Binarys
+*.elf
+*.exe
+*.o
+*.a
+*.so
+
+# Temp Files
+*.swo
+*.swp
+
+# DB's 
+tags
+cscope.out
