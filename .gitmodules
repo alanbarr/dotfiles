@@ -1,0 +1,27 @@
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/tagbar"]
+	path = vim/.vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/vim-airline"]
+	path = vim/.vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/vim-indent-guides"]
+	path = vim/.vim/bundle/vim-indent-guides
+	url = git@github.com:nathanaelkane/vim-indent-guides
+[submodule "vim/.vim/bundle/vim-pathogen"]
+	path = vim/.vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "fonts/source-code-pro"]
+	path = fonts/source-code-pro
+	url = git@github.com:adobe-fonts/source-code-pro.git
+[submodule "vim/.vim/colors/wombat"]
+	path = vim/.vim/colors/wombat
+	url = git@github.com:vim-scripts/wombat
+[submodule "vim/.vim/colors/wombat256"]
+	path = vim/.vim/colors/wombat256
+	url = git@github.com:vim-scripts/wombat256.vim
