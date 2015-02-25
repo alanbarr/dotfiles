@@ -1,5 +1,5 @@
 [user]
-    name = Alan Barr
+
 [core]
     excludesfile = ~/.gitignore
     editor = vim
