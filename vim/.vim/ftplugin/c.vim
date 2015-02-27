@@ -1,1 +1,1 @@
-setlocal formatoptions=croql
+setlocal formatoptions=croqlj

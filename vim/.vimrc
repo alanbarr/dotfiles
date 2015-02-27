@@ -52,7 +52,10 @@ if has('mouse')
   set mousemodel=popup_setpos
 endif
 
-set textwidth=140               "wraps text
+set textwidth=80               "wraps text
+
+"Auto text wrap off.
+set formatoptions-=t
 
 "Spelling : Toggle spell checking on and off with `,s`
 let mapleader = ","
