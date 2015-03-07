@@ -54,8 +54,10 @@ endif
 
 set textwidth=80               "wraps text
 
-"Auto text wrap off.
+" Auto text wrap off.
 set formatoptions-=t
+" Remove a comment leader when joining lines.
+set formatoptions+=j
 
 "Spelling : Toggle spell checking on and off with `,s`
 let mapleader = ","
