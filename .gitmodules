@@ -25,3 +25,6 @@
 [submodule "vim/.vim/colors/wombat256"]
 	path = vim/.vim/colors/wombat256
 	url = git@github.com:vim-scripts/wombat256.vim
+[submodule "vim/.vim/bundle/DrawIt"]
+	path = vim/.vim/bundle/DrawIt
+	url = https://github.com/vim-scripts/DrawIt.git
