@@ -56,6 +56,11 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# mutliple monitors - this seems to cycle OK i.e. if you 
+# have two monitors it will toggle. Not sure if this is 
+# ultimately down to bad config of my monitors.
+bindsym $mod+m move workspace to output left
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
