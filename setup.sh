@@ -21,4 +21,10 @@ ln -s ${DOT_DIR}/git/.gitconfig ${HOME_DIR}/.gitconfig
 ln -s ${DOT_DIR}/git/.gitignore ${HOME_DIR}/.gitignore
 
 
+########## Setup i3 ########## 
+ln -s ${DOT_DIR}/i3/config ${HOME_DIR}/.i3/config
+
+echo "source ${DOT_DIR}/bash" >> ${HOME_DIR}/.bashrc
+
+
 
