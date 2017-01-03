@@ -25,7 +25,7 @@ ln -s ${DOT_DIR}/git/.gitignore ${HOME_DIR}/.gitignore
 ln -s ${DOT_DIR}/i3/config ${HOME_DIR}/.i3/config
 ln -s ${DOT_DIR}/i3/i3status.conf ${HOME_DIR}/.i3status.conf
 
-echo "source ${DOT_DIR}/bash" >> ${HOME_DIR}/.bashrc
+echo "source ${DOT_DIR}/bash.sh" >> ${HOME_DIR}/.bashrc
 
 
 
