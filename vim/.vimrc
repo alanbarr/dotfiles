@@ -78,6 +78,9 @@ set spelllang=en_gb
 "Convenience
 imap jj <Esc>
 
+" C Function Argument Alignment
+set cino=(0
+
 "File specific options
 syntax on
 filetype on
