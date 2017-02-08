@@ -15,7 +15,6 @@ set softtabstop=4
 set expandtab                   "Tabs to spaces
 set smarttab
 set autoindent                  "Keep same indent when no filtype specific
-"set smartindent
 set cindent
 set number                      "Line numbers on
 set hls                         "Search highlighting on
@@ -64,17 +63,6 @@ let mapleader = ","
 nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_gb
 
-"Used for id utils
-"map _u :call ID_search()<Bar>execute "/\\<" . g:word . "\\>"<CR>
-"map _n :n<Bar>execute "/\\<" . g:word . "\\>"<CR>
-"
-"function! ID_search()
-"  let g:word = expand("<cword>")
-"  let x = system("lid --key=none ". g:word)
-"  let x = substitute(x, "\n", " ", "g")
-"  execute "next " . x
-"endfun
-
 "Convenience
 imap jj <Esc>
 
@@ -86,21 +74,11 @@ syntax on
 filetype on
 filetype plugin on
 filetype indent on "XXX consider removing
-"if has ("autocmd")
-"    autocmd Filetype make set noexpandtab
-"    autocmd Filetype c set cindent
-"endif
 
 if exists('+colorcolumn')
     set colorcolumn=81
-    "highlight ColorColumn ctermbg=magenta
-    " following should only mark lines with overflow
-    "call matchadd('ColorColumn', '\%80v', 100)
 else
     augroup vimrc_autocmds
-        "autocmd VimEnter * autocmd WinEnter * let w:created=1
-        "autocmd WinEnter * if !exists('w:created')
-        "endif
         highlight OverLength ctermbg=darkgrey guibg=#111111
         autocmd BufEnter * match OverLength /\%80v.\+/
         autocmd WinEnter * match OverLength /\%80v.\+/
@@ -129,31 +107,4 @@ function EditingText()
     set nocindent
 endfunction
 
-""##########
-"" Damian Conway's stuff from http://is.gd/IBV2013
-""=====[ Block Dragging ]=====
-"    runtime plugin/dragvisuals.vim
-"    "let g:DVB_TrimWS = 1
-"    vmap  <expr>  <S-LEFT>   DVB_Drag('left')
-"    vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
-"    vmap  <expr>  <S-DOWN>   DVB_Drag('down')
-"    vmap  <expr>  <S-UP>     DVB_Drag('up')
-"
-""=====[ Highlight matches when jumping to next ]====
-"    " This rewires n and N to do the highlighing...
-"    nnoremap <silent> n   n:call HLNext(0.4)<cr>
-"    nnoremap <silent> N   N:call HLNext(0.4)<cr>
-"
-"    " OR ELSE just highlight the match in red...
-"    function! HLNext (blinktime)
-"        let [bufnum, lnum, col, off] = getpos('.')
-"        let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
-"        let target_pat = '\c\%#'.@/
-"        let ring = matchadd('WhiteOnRed', target_pat, 101)
-"        redraw
-"        exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-"        call matchdelete(ring)
-"        redraw
-"    endfunction
-""###########
 "
