@@ -120,6 +120,15 @@ map <leader>t :TagbarToggle<CR>
 " NERDTree Configuration
 map <leader>n :NERDTreeToggle<CR>
 
+
+autocmd BufNewFile,BufRead *.txt   call EditingText()
+autocmd BufNewFile,BufRead *.ascii call EditingText()
+
+function EditingText()
+    set formatoptions+=t
+    set nocindent
+endfunction
+
 ""##########
 "" Damian Conway's stuff from http://is.gd/IBV2013
 ""=====[ Block Dragging ]=====
