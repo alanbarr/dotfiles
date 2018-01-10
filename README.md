@@ -15,3 +15,7 @@ __Use at your own risk!__
 * [Read - viccuad's vimrc] (https://github.com/viccuad/dotfiles/blob/master/vim/.vimrc?ts=4)
 * [Read - vim after 15 years](https://statico.github.io/vim3.html)
 * [Try - Office Code Pro] (https://github.com/nathco/Office-Code-Pro)
+
+### bash
+
+* remove `set -o vi` from bash and move to inputrc's `set editing-mode vi`
