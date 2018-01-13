@@ -20,11 +20,14 @@ ln -s ${DOT_DIR}/fonts ${HOME_DIR}/.fonts
 ln -s ${DOT_DIR}/git/.gitconfig ${HOME_DIR}/.gitconfig
 ln -s ${DOT_DIR}/git/.gitignore ${HOME_DIR}/.gitignore
 
-
 ########## Setup i3 ########## 
 ln -s ${DOT_DIR}/i3/config ${HOME_DIR}/.i3/config
 ln -s ${DOT_DIR}/i3/i3status.conf ${HOME_DIR}/.i3status.conf
 
+########## Input ########## 
+ln -s ${DOT_DIR}/inputrc ~/.inputrc
+
+########## Bash ########## 
 echo "source ${DOT_DIR}/bash.sh" >> ${HOME_DIR}/.bashrc
 
 

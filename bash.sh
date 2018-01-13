@@ -16,7 +16,3 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # Misc
 ################################################################################
 
-# Use vi commands on the command line rather than Emacs. 
-# No more Ctrl-A etc
-# Instead ESC then vi command
-set -o vi
