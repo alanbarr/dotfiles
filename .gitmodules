@@ -28,3 +28,6 @@
 [submodule "vim/.vim/bundle/DrawIt"]
 	path = vim/.vim/bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
+[submodule "vim/.vim/bundle/rust.vim"]
+	path = vim/.vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
