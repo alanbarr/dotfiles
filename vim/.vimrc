@@ -110,3 +110,7 @@ endfunction
 " Show trailing whitespace
 set list
 set listchars=trail:~
+
+" Clang Format
+map  <leader>cf      :py3f ~/dotfiles/clang/clang-format.py<cr>
+imap <leader>cf <c-o>:py3f ~/dotfiles/clang/clang-format.py<cr>
