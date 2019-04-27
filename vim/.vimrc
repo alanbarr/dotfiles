@@ -107,4 +107,6 @@ function EditingText()
     set nocindent
 endfunction
 
-"
+" Show trailing whitespace
+set list
+set listchars=trail:~
