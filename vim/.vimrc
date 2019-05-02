@@ -112,5 +112,10 @@ set list
 set listchars=trail:~
 
 " Clang Format
+if has('python')
+map  <leader>cf      :pyf ~/dotfiles/clang/clang-format.py<cr>
+imap <leader>cf <c-o>:pyf ~/dotfiles/clang/clang-format.py<cr>
+elseif has('python3')
 map  <leader>cf      :py3f ~/dotfiles/clang/clang-format.py<cr>
 imap <leader>cf <c-o>:py3f ~/dotfiles/clang/clang-format.py<cr>
+endif
