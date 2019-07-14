@@ -110,6 +110,7 @@ endfunction
 " Show trailing whitespace
 set list
 set listchars=trail:~
+set listchars+=tab:>-
 
 " Clang Format
 if has('python')
