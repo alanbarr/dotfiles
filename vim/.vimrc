@@ -120,3 +120,6 @@ elseif has('python3')
 map  <leader>cf      :py3f ~/dotfiles/clang/clang-format.py<cr>
 imap <leader>cf <c-o>:py3f ~/dotfiles/clang/clang-format.py<cr>
 endif
+
+"fzf
+set runtimepath+=~/fzf
