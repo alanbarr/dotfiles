@@ -4,11 +4,12 @@
 *.o
 *.a
 *.so
+*.pyc
 
 # Temp Files
 *.swo
 *.swp
 
-# DB's 
+# DB's
 tags
 cscope.out
