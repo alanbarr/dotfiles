@@ -96,7 +96,8 @@ set laststatus=2
 map <leader>t :TagbarToggle<CR>
 
 " NERDTree Configuration
-map <leader>n :NERDTreeToggle<CR>
+map <leader>nr :NERDTreeToggle<CR>
+map <leader>nh :NERDTreeFind<CR>
 
 
 autocmd BufNewFile,BufRead *.txt   call EditingText()
