@@ -13,3 +13,9 @@
 # DB's
 tags
 cscope.out
+GPATH
+GRTAGS
+GTAGS
+
+# Configs
+.clang-format
