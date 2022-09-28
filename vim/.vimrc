@@ -127,3 +127,16 @@ nmap <leader>fn :let @f=expand("%:p")<CR>
 
 "fzf
 set runtimepath+=~/fzf
+
+" Swap between .hpp and .cpp quickly
+function! OpenSwappedExtension()
+    let [rest, ext] = [expand('%:r'), expand('%:e')]
+    if ext ==? 'hpp'
+        let ext = 'cpp'
+    elseif ext ==? 'cpp'
+        let ext = 'hpp'
+    endif
+    let swapped_file = rest . '.' . ext
+    execute "e " .  fnameescape(swapped_file)
+endfunction
+nnoremap  <leader>se :call OpenSwappedExtension()<CR>
