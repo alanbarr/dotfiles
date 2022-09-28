@@ -122,5 +122,8 @@ map  <leader>cf      :py3f ~/dotfiles/clang/clang-format.py<cr>
 imap <leader>cf <c-o>:py3f ~/dotfiles/clang/clang-format.py<cr>
 endif
 
+" Copy path and filename to f
+nmap <leader>fn :let @f=expand("%:p")<CR>
+
 "fzf
 set runtimepath+=~/fzf
