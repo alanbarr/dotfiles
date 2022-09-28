@@ -2,8 +2,10 @@
 
 [core]
     excludesfile = ~/.gitignore
-    editor = vim
+    editor = gvim --nofork
 [difftool]
     prompt = false
 [push]
     default = tracking
+[pull]
+	ff = only
